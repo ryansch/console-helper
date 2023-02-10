@@ -1,5 +1,5 @@
 FROM alpine:latest
-LABEL maintainer="Ryan Schlesinger <ryan@outstand.com>"
+LABEL maintainer="Ryan Schlesinger <ryan@ryanschlesinger.com>"
 
 RUN set -eux; \
       \
