@@ -15,7 +15,12 @@ RUN set -eux; \
         tini \
         jq \
         docker-cli \
-    ;
+        py-pip \
+        ncurses \
+      ; \
+      \
+      pip install awscli; \
+      aws --version
 
 COPY helper.sh /usr/local/bin/
 CMD ["/usr/local/bin/helper.sh"]
