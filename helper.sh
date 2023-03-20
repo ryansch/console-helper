@@ -42,10 +42,11 @@ done
 
 echo
 echo "-> Loading console on ${docker_id}"
-echo "-> Running /docker-entrypoint.sh console"
 
 if [ "${BASH_SHELL:-}" == "true" ]; then
+  echo "-> Running a bash shell inside the container"
   bash
 else
+  echo "-> Running /docker-entrypoint.sh console"
   docker exec -it "${docker_id}" /docker-entrypoint.sh console
 fi
