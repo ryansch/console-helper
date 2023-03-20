@@ -44,7 +44,7 @@ echo
 echo "-> Loading console on ${docker_id}"
 
 if [ "${BASH_SHELL:-}" == "true" ]; then
-  echo "-> Running a bash shell inside the container"
+  echo "-> Running a bash shell on the container instance"
   bash
 else
   echo "-> Running /docker-entrypoint.sh console"
